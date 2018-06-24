@@ -4,11 +4,12 @@
              xmlns:local="clr-namespace:DemoZoomImage"
              x:Class="DemoZoomImage.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <Grid Padding="20">
+        <local:PinchToZoomContainer>
+            <local:PinchToZoomContainer.Content>
+                <Image Source="wallpaper.jpg"/>
+            </local:PinchToZoomContainer.Content>
+        </local:PinchToZoomContainer>
+    </Grid>
 
 </ContentPage>
